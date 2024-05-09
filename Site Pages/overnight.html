@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="css/site.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Overnight</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4 mt-3">
+                    <label> Enter Name: </label>
+                    <input id="enterName" type="text">
+                </div>
+            </div>
+
+            <div class="col-4 mt-3">
+                <label> Enter Email: </label>
+                <input id="enterEmail" type="text">
+
+            </div>
+            <div class="col-4 mt-3">
+                <label> Check-In Date: </label>
+                <input id="enterDate" type="date">
+            </div>
+
+            <div class="col-4 mt-3">
+                <label> Amount of Days: </label>
+                <input id="enterAmountOfDays" type="type">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-4 mt-5">
+                    <h5>Room Type</h5>
+
+                    <input type="radio" name="queenRoom" id="queenRoomRadio"> Queen Bedroom <br>
+
+                    <input type="radio" name="kingRoom" id="kingRoomRadio"> King Bedroom <br>
+
+                    <input type="radio" name="twinRoom" id="twinRoomRadio"> Twin Bedroom <br>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-4 mt-5">
+
+
+                    <div class="col-4 mt-2">
+                        <h5>Number of Adult(s)</h5>
+                        <input id="numberOfAdults" type="type">
+                    </div>
+
+
+
+                    <div class="col-4 mt-4">
+                        <h5>Number of Children(s)</h5>
+                        <input id="numberOfChildren" type="type">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container ">
+            <div class="row">
+                <div class="col-4 mt-5">
+                    <h5>Discounts</h5>
+
+                    <input type="radio" name="militaryDiscount" id="militaryDiscountRadio"> Military Discount (20%) <br>
+
+                    <input type="radio" name="seniorAAADiscount" id="seniorAAADiscountRadio"> AAA/Senior Discount (10%) <br>
+
+                    <input type="radio" name="noneDiscount" id="noneDiscountRadio"> None <br>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        
+        <div class="container">
+            <div class="row">
+
+                <div class="col-2 mb-4 mt-3">
+                    <button type="button" id="estimateStayBtn" class="btn btn-primary"> Estimate My Stay </button>
+
+                </div>
+
+                <hr>
+                <div>
+
+                    <label> Base Room Price: </label>
+                    <span id="originalRoomPrice">---.--</span>
+
+                </div>
+
+                <div>
+
+                    <label> Discount(s): </label>
+                    <span id="roomDiscount">---.--</span>
+
+                </div>
+                <div>
+                    <label> Discounted Room Costs: </label>
+                    <span id="roomDiscountedCost">---.--</span>
+
+                </div>
+                <div>
+
+                    <label> Taxes: </label>
+                    <span id="roomTax">---.--</span>
+                </div>
+
+                <div class="col mt-3 mb-5">
+
+                   <h4> Total Cost of Stay </h4>
+                    <span id="totalCostOfStay">---.--</span>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="scripts/site.js"></script>
+
+<script src="/scripts/overnight.js"></script>
+</body>
+
+</html>
